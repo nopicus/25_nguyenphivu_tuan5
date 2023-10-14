@@ -1,0 +1,157 @@
+// import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, SafeAreaView ,Button} from "react-native";
+// import { useState } from "react";
+// import { useNavigation } from "@react-navigation/native";
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// const Stack = createStackNavigator();
+// export default function App() {
+//     const pictures2 = ({ route }) => {
+//         const navigation = useNavigation();
+//         const data = route.params;}
+//         const Stack = createNativeStackNavigator();
+//         const [selected, setSelected] = useState(false);
+//         const Screen2 = () => {
+//           navigation.navigate("Screen2");
+//         };
+//     return (  
+//         <SafeAreaView style={styles.container}>   
+//          <Image style={styles.itemImg} source={require('../image/vs_blue.png')} 
+//           />
+//           {/* tạo chữ */}
+//          <View style={styles.view2}>
+//                 <Text style={{fontSize:15,fontWeight:'rotobo',top:10,left:10}}>
+//                     Điện Thoại Vsmart Joy 3 - Hàng chính hãng
+//                     </Text>
+//            <View style={styles.rating}>
+//            <View style={styles.ratingStars}>
+//             {/* Hiển thị ngôi sao đánh giá */}
+//             {Array(5).fill(0).map((item, index) => (
+//                 <Image key={index} source={require('./../image/star.png')} style={styles.starImage} 
+//                 />
+//                 ))}
+//             </View>
+//            </View>
+//           {/* đánh giá  */}
+//          <View style={styles.view3}>
+//                 <Text style={{fontSize:15,fontWeight:'rotobo',top:-13,left:165}}>
+//                     (Xem 828 đánh giá)
+//               </Text>
+//              </View>
+//           {/* giá tien */}
+//           <View style={styles.view4}>
+//                 <Text style={{fontSize:18,
+//                     fontWeight:'rotobo',
+//                     top:0,
+//                     left:5}}>
+//                     1.790.000đ
+//                     </Text>
+//                 <Text style={{ fontSize: 18, 
+//                     color: 'grey',
+//                     textDecorationLine: 'line-through',
+//                     top:-25, 
+//                     left:160 }}>
+//                     1.790.000 đ
+//                 </Text>
+//                 </View>
+//         {/* ở đâu rẻ hơn hoàn tiền */}
+//         <View style={styles.view5}>
+//                 <Text style={{fontSize:12,
+//                 fontWeight:'rotobo',
+//                 top:-5,
+//                 left:5,
+//                 color:'red'}}>
+//                 Ở ĐÂU RẺ HƠN HOÀN TIỀN
+//                     </Text>
+//                 </View>
+//                 {/* tao dau cham hỏi  */}
+//                 <View style={{
+//                 borderWidth: 1,
+//                 borderRadius: 45,
+//                 height: 20,
+//                 width: 20,
+//                 top: -20,
+//                 left: 157,
+//           }}
+//         >
+//           <Text style={(styles.text, { textAlign: "center" })}>?</Text>
+//           </View>
+//          </View>
+//          <TouchableOpacity
+//         style={[styles.btnSelected, { backgroundColor: "white" }]}
+//         onPress={() => navigation.navigate('Screen2')}
+//       >
+//         <View
+//           style={{
+//             flexDirection: "row",
+//             alignItems: "center",
+//             justifyContent: "center ",
+//             top:-30,
+//             left:0,
+//           }}
+//         >
+//           <Text style={styles.text}>4 MÀU-CHỌN MÀU</Text>
+//         </View>
+//       </TouchableOpacity>
+//       <View style={styles.view6}>
+//           <Button title="chọn mua" color="red"
+//           onPress={() => alert('xác nhận mua')}/>
+//           </View>
+//         </SafeAreaView>
+// )}
+// const styles = StyleSheet.create({
+//     container:{
+//         flex: 1,
+//         backgroundColor: "#cccccc",
+//         alignItems: "center",
+//         justifyContent: "center",
+//     },
+//     itemImg:{
+//         width: '100%',
+//         height: '150px',
+//         margin: 170,
+//         resizeMode:"contain",
+//     },
+    
+//     starImage: {
+//         width: 25,
+//         height: 25,
+//         top:10,
+//         left:5,
+//     },
+//     rating: {
+//         flexDirection: "row",
+//         justifyContent: "space-between",
+//         alignItems: "center",
+//       },
+//       ratingStars: {
+//         flexDirection: "row",
+//         gap: 5,
+//       },
+//       ratingText: {
+//         fontSize: 14,
+//         fontWeight: "600",
+//       },
+//       text:{
+//         fontSize:15,
+//         fontWeight:'rotobo',
+//         top:30,
+//         left:-20,
+//         lineHeight:'17.58px',
+//       },
+//     btnSelected:{
+//         borderColor: "#CA1536",
+//       backgroundColor: "#EE0A0A",
+//        marginTop: 16,
+//       width: "90%",
+//       padding: 8,
+//      borderWidth: 1,
+//      borderRadius: 10,
+//     },
+//    view6:{
+//     top:10,
+//     left:0,
+//     width: "95%",
+//     padding: 10,
+//     borderRadius: 10,
+//    },
+    
+// })
